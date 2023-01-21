@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumpy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="logoDnc.svg" alt="">
+    </header>
+
+    <main>
+        <div id="boasVindas">
+            <img src="jumpy.svg" alt="">
+            <h1>Bem vindo ao Jumpy!</h1>
+        </div>
+
+        <div id="formulario" >
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="nome" placeholder="Nome completo" required >
+            <p class="campoObrig" id="COnome">A</p>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Email@email.com" required >
+            <p class="campoObrig" id="COemail">A</p>
+            <br>
+
+            <label for="fone">Telefone:</label>
+            <input type="tel" id="tel" placeholder="(00) 0 0000-0000" maxlength="16" required>
+            <p class="campoObrig" id="COtel">A</p>
+            <br>
+
+            <label for="cpf">CPF:</label>
+            <input  id="cpf" type="text" maxlength="14" placeholder="000.000.000-00" required>
+            <p class="campoObrig" id="COcpf">A</p>
+            <br>
+
+            <label for="senha">Senha (6 dígitos):</label>
+            <input type="password" id="senha" placeholder="******" maxlength="6" required>
+            <p class="campoObrig" id="COsenha">A</p>
+            <br>
+
+            <button type="submit" onclick ="validar()"> Cadastrar </button>
+            <p id="status">A</p>
+
+            </div>
+
+
+    </main>
+</body>
+
+<script src="script.js"></script>
+
+</html>
